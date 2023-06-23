@@ -1,0 +1,185 @@
+:root {
+  /* Primary colors */
+  --pinkColor: hsl(322, 100%, 66%);
+  --lightPinkColor: hsl(321, 100%, 78%);
+  --lightRed: hsl(0, 100%, 63%);
+
+  /* Neutral colors */
+  --darkCyan: hsl(192, 100%, 9%);
+  --paleBlue: hsl(207, 100%, 98%);
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Branding section */
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 50px;
+  height: fit-content;
+  padding-right: 10px;
+}
+
+.tryButton {
+  display: flex;
+  align-items: center;
+}
+
+.tryButton button {
+  height: 40px;
+  width: 135px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: var(--pinkColor);
+  border: 1px solid var(--pinkColor);
+  outline: none;
+}
+
+.tryButton button:hover {
+  box-shadow: 1px 1px 10px var(--lightPinkColor);
+}
+
+/* Welcome Section */
+
+h2 {
+  font-size: 49px !important;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.welcome {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeMessage {
+  font-size: 20px;
+  color: var(--darkCyan);
+  line-height: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.getStarted {
+  width: 400px;
+  height: 80px;
+  background-color: var(--pinkColor);
+  border-radius: 40px;
+  color: #fff;
+  border: none;
+  box-shadow: 1px 1px 5px grey;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.hero img {
+  width: 70%;
+}
+
+/* Reported numbers */
+
+.reportedNumbers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120px;
+}
+
+.reportedNumbers img {
+  width: 50px;
+}
+
+.communityNumber,
+.messageNumber {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.communityText {
+  font-size: 18px;
+  color: grey;
+  text-align: center;
+}
+
+/* Cards --object oriented design-- */
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f6fbff;
+}
+
+.cardContent img {
+  width: 500px;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.cardWaveTop {
+  width: 100%;
+  margin-bottom: -5px;
+  margin-top: 100px;
+}
+
+.cardTitle {
+  font-size: 30px;
+  font-family: Poppins;
+  color: var(--darkCyan);
+}
+
+.cardText {
+  line-height: 26px;
+  color: var(--darkCyan);
+}
+
+.ready {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer section
+--also we need to make mobile version
+-fix the bugs that are above
+for example the text-align is not working
+as intended. 
+
+aboboc / 24.06.23*/
