@@ -266,3 +266,127 @@ footer button {
   border-radius: 5px;
   margin: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    margin-top: 0;
+  }
+
+  .cardWaveTop {
+    margin-top: 20px;
+  }
+
+  .cardWaveBottom {
+    margin-bottom: 20px;
+  }
+
+  .tryButton {
+    display: none;
+  }
+
+  .branding {
+    margin: auto;
+  }
+  .cardContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardContent img {
+    width: 300px;
+    margin: 25px 0;
+  }
+
+  .getStarted {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 50px 0;
+  }
+
+  .cardTitle {
+    font-size: 28px !important;
+    text-align: center;
+  }
+
+  .cardText {
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  footer div {
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 36px !important;
+    padding: 0 10px;
+  }
+
+  .newsletterForm button {
+    margin: 20px 0;
+  }
+
+  .ready {
+    text-align: center;
+  }
+
+  .communities,
+  .messages {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .communityNumber,
+  .messageNumber {
+    font-size: 35px;
+  }
+
+  .communityText {
+    font-size: 14px;
+  }
+
+  .reportedNumbers img {
+    margin: 14px;
+  }
+
+  .hero img {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cardTitle {
+    font-size: 29px !important;
+  }
+
+  .cardImage,
+  .cardText {
+    width: 400px;
+  }
+
+  .cardContent img {
+    width: 400px;
+  }
+
+  .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .newsletterForm button {
+    margin: 15px 0;
+  }
+}
