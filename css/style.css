@@ -11,6 +11,7 @@
 
 body {
   font-family: "Open Sans";
+  overflow-x: hidden;
 }
 
 .container {
@@ -71,10 +72,15 @@ h2 {
   font-weight: 700;
 }
 
+.centered {
+  text-align: center;
+}
+
 .welcome {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -153,9 +159,16 @@ h2 {
 }
 
 .cardWaveTop {
-  width: 100%;
+  width: 100vw;
   margin-bottom: -5px;
-  margin-top: 100px;
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+.cardWaveBottom {
+  margin-bottom: 200px;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .cardTitle {
@@ -183,3 +196,73 @@ for example the text-align is not working
 as intended. 
 
 aboboc / 24.06.23*/
+
+/* footer section */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #01262f;
+  color: var(--paleBlue);
+  padding: 100px 0;
+}
+
+.footerText {
+  padding: 20px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.marginFixer {
+  margin: 0;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactInfo {
+  padding-left: 20px;
+}
+
+footer input {
+  width: 320px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+footer button {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--pinkColor);
+  color: #fff;
+  margin-left: 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  background-color: var(--darkCyan);
+  margin: 0;
+  padding: 0;
+  color: hsla(210, 100%, 98%, 0.259);
+  padding-bottom: 50px;
+}
+
+.social i {
+  border-radius: 5px;
+  margin: 20px;
+}
